@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Весілля Марії та Олексія</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #fdfdfb;
+      color: #333;
+    }
+    header {
+      background: url("main-photo.jpeg") center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background-position: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.5em;
+      margin: 0.5em 0;
+    }
+    section {
+      padding: 3em 1em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .rsvp-form input, .rsvp-form textarea, .rsvp-form select {
+      width: 100%;
+      padding: 0.7em;
+      margin: 0.5em 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .rsvp-form button {
+      padding: 0.7em 2em;
+      background: #446644;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2em;
+      font-size: 0.9em;
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mariia & Oleksii</h1>
+    <p>20 вересня 2025</p>
+  </header>
+
+  <section>
+    <h2>Деталі події</h2>
+    <p><strong>Місце:</strong> Forrest Club, м. Київ, проспект Литовський, 20А</p>
+    <p><strong>Час:</strong> 13:30 – welcome drink та збір гостей<br>
+    14:30 – початок церемонії</p>
+  </section>
+
+  <section>
+    <h2>Дрес-код</h2>
+    <p>Надайте перевагу природним відтінкам без яскравих акцентів.<br>Чорний колір дозволений.</p>
+  </section>
+
+  <section>
+    <h2>Подарунки</h2>
+    <p>Ми будемо вдячні, якщо замість квітів ви подаруєте щось символічне:</p>
+    <ul>
+      <li>Книги, які мають для вас значення</li>
+      <li>Донат на підтримку ЗСУ</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Контакт координатора</h2>
+    <p>З усіх питань звертайтесь до нашої координаторки Діани:<br>
+    <strong>+380 (63) 152 75 54</strong></p>
+  </section>
+
+  <section>
+    <h2>RSVP</h2>
+    <form class="rsvp-form" action="https://formspree.io/f/mqaqpobb" method="POST">
+      <input type="text" name="name" placeholder="Ім’я" required>
+      <input type="text" name="surname" placeholder="Прізвище" required>
+      <select name="attendance" required>
+        <option value="">Чи будете ви присутні?</option>
+        <option value="Так">Так</option>
+        <option value="Ні">Ні</option>
+      </select>
+      <input type="number" name="guests" placeholder="Кількість гостей" min="1" max="10">
+      <textarea name="message" placeholder="Коментар (за бажанням)"></textarea>
+      <button type="submit">Надіслати</button>
+    </form>
+  </section>
+
+  <footer>
+    З любов’ю, Марія та Олексій — 2025
+  </footer>
+
+</body>
+</html>
