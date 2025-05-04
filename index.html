@@ -1,126 +1,121 @@
+
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Весілля Mariia & Oleksii</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #fff;
-            color: #000;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            padding: 0;
-        }
-        header img {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-        }
-        h1 {
-            font-family: Georgia, serif;
-            font-size: 36px;
-            margin: 20px 0 0;
-        }
-        .date {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        .countdown {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
-        section {
-            padding: 20px;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        h2 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 400;
-            font-size: 26px;
-            margin-top: 40px;
-            color: #333;
-        }
-        .rsvp {
-            margin-top: 40px;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #666;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Весілля Mariia & Oleksii</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fff;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      text-align: center;
+    }
+    header img {
+      width: 100%;
+      max-height: 600px;
+      object-fit: cover;
+    }
+    .names {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-top: 20px;
+      color: #000;
+    }
+    .date {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .countdown {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    section {
+      padding: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: 26px;
+      margin-top: 40px;
+      color: #333;
+    }
+    .rsvp {
+      margin-top: 40px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-    <header><header style="text-align: center;">
-    <img src="main-photo.jpeg" alt="Наше фото" style="width: 100%; max-height: 600px; object-fit: cover;">
-    <div style="
-        font-family: 'Playfair Display', serif;
-        font-size: 36px;
-        font-weight: 400;
-        margin-top: 20px;
-        color: #000;
-    ">
-        Oleksii & Mariia
+  <header>
+    <img src="main-photo.jpeg" alt="Наше фото">
+    <div class="names">Oleksii & Mariia</div>
+    <div class="date">20.09.2025</div>
+    <div id="countdown" class="countdown">Завантаження відліку...</div>
+  </header>
+
+  <section>
+    <h2>Про подію</h2>
+    <p><strong>Церемонія та банкет:</strong> Forrest Club, м.Київ, проспект Литовський, 20А</p>
+    <p>13:30 — welcome drink<br>14:30 — початок церемонії</p>
+
+    <h2>Дрес-код</h2>
+    <p>Просимо обрати природні відтінки без яскравих акцентів. Чорний дозволений.</p>
+
+    <h2>Подарунки</h2>
+    <p>• Книга з особливим значенням<br>• Донат на ЗСУ</p>
+
+    <h2>Координатор</h2>
+    <p>Діана — +380 (63) 152 75 54</p>
+
+    <div class="rsvp">
+      <h2>Підтвердження присутності</h2>
+      <p>Просимо повідомити до 01.08 🤍</p>
+      <iframe src="https://formspree.io/f/mqaqpobb" width="100%" height="400" frameborder="0"></iframe>
     </div>
-</header>
-<div class="date">20.09.2025</div>
-<div class="countdown" id="countdown">Завантаження відліку...</div></header>
+  </section>
 
-    <section>
-        <h2>Про подію</h2>
-        <p><strong>Церемонія та святковий банкет:</strong> Forrest Club, м.Київ, проспект Литовський, 20А</p>
-        <p>13:30 — збір гостей та welcome drink<br>14:30 — початок церемонії</p>
+  <footer>
+    Створено з любов’ю
+  </footer>
 
-        <h2>Дрес-код</h2>
-        <p>Будемо дуже вдячні якщо при виборі вбрання Ви надасте перевагу природнім відтінкам без яскравих акцентів. Чорний дозволений.</p>
+  <script>
+    const weddingDate = new Date("2025-09-20T14:30:00+03:00");
+    const countdown = document.getElementById("countdown");
 
-        <h2>Якщо Ви планували придбати квіти для нас, то:</h2>
-        <p>• Будемо раді, якщо поповните нашу бібліотеку особливою для Вас книгою<br>• Пропонуємо задонатити на ЗСУ (у день весілля ми розмістимо QR-код з посиланням на власну банку)</p>
+    function updateCountdown() {
+      const now = new Date();
+      const timeLeft = weddingDate - now;
 
-        <h2>Координатор</h2>
-        <p>Щодо усіх питань у день весілля просимо звертатись до нашої координаторки. Діана — +380 (63) 152 75 54</p>
+      if (timeLeft <= 0) {
+        countdown.innerHTML = "Весілля вже розпочалося!";
+        return;
+      }
 
-        <div class="rsvp">
-            <h2>Підтвердження присутності</h2>
-            <p>Просимо повідомити до 01.08 🤍</p>
-            <iframe src="https://formspree.io/f/mqaqpobb" width="100%" height="400" frameborder="0"></iframe>
-        </div>
-    </section>
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((timeLeft / 1000 / 60) % 60);
+      const seconds = Math.floor((timeLeft / 1000) % 60);
 
-    <footer>
-        Створено з любов’ю
-    </footer>
+      countdown.innerHTML = `${days} днів ${hours} год ${minutes} хв ${seconds} сек`;
+    }
 
-    <script>
-        const weddingDate = new Date("2025-09-20T14:30:00+03:00"); // київський час
-        const countdown = document.getElementById("countdown");
-
-        function updateCountdown() {
-            const now = new Date();
-            const diff = weddingDate - now;
-            if (diff <= 0) {
-                countdown.textContent = "Весілля розпочалося!";
-                return;
-            }
-
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-            const minutes = Math.floor((diff / (1000 * 60)) % 60);
-            const seconds = Math.floor((diff / 1000) % 60);
-
-            countdown.textContent = До весілля залишилось: ${days} днів ${hours} год ${minutes} хв ${seconds} сек;
-        }
-
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-    </script>
-<script src="countdown.js"></script>
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
 </body>
 </html>
