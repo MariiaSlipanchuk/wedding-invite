@@ -63,7 +63,7 @@
 <body>
   <header>
     <img src="main-photo.jpeg" alt="Наше фото">
-    <div class="names">Oleksii & Mariia</div>
+    <div class="names">Oleksii · Mariia</div>
     <div class="date">20.09.2025</div>
     <div id="countdown" class="countdown">Завантаження відліку...</div>
   </header>
@@ -74,18 +74,40 @@
     <p>13:30 — welcome drink<br>14:30 — початок церемонії</p>
 
     <h2>Дрес-код</h2>
-    <p>Просимо обрати природні відтінки без яскравих акцентів. Чорний дозволений.</p>
+    <p>Просимо Вас обрати природні відтінки без яскравих акцентів. Чорний дозволений.</p>
 
-    <h2>Подарунки</h2>
-    <p>• Книга з особливим значенням<br>• Донат на ЗСУ</p>
-
-    <h2>Координатор</h2>
+    <h2>Якщо Ви планували придбати квіти</h2>
+    <p>• Просимо замінити на особливу для Вас книгу з підписом<br>• Або підтримати збір для війська (у день весілля ми розмістимо на локації QR код з посиланням на банку)</p> 
+    
+    <h2>За всіма питаннями у день весілля просимо звертатись до нашої координаторки</h2>
     <p>Діана — +380 (63) 152 75 54</p>
 
     <div class="rsvp">
       <h2>Підтвердження присутності</h2>
       <p>Просимо повідомити до 01.08 🤍</p>
-      <iframe src="https://formspree.io/f/mqaqpobb" width="100%" height="400" frameborder="0"></iframe>
+
+      <form action="https://formspree.io/f/mqaqpobb" method="POST" style="max-width: 500px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9;">
+        <label for="name" style="display: block; text-align: left; margin-bottom: 5px;">Ваше ім'я:</label>
+        <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #bbb;">
+
+        <label for="attending" style="display: block; text-align: left; margin-bottom: 5px;">Чи будете присутні?</label>
+        <select id="attending" name="attending" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #bbb;">
+          <option value="yes">Так</option>
+          <option value="no">Ні</option>
+        </select>
+
+        <label for="children" style="display: block; text-align: left; margin-bottom: 5px;">Чи будуть з вами діти?</label>
+        <select id="children" name="children" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #bbb;">
+          <option value="none">Ні</option>
+          <option value="1">Так, 1 дитина</option>
+          <option value="2">Так, 2 дитини</option>
+        </select>
+
+        <label for="message" style="display: block; text-align: left; margin-bottom: 5px;">Коментар:</label>
+        <textarea id="message" name="message" rows="4" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #bbb; margin-bottom: 15px;"></textarea>
+
+        <button type="submit" style="padding: 10px 20px; border: none; border-radius: 5px; background-color: #444; color: white; cursor: pointer;">Надіслати</button>
+      </form>
     </div>
   </section>
 
