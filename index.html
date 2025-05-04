@@ -1,121 +1,125 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Весілля Марії та Олексія</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #fdfdfb;
-      color: #333;
-    }
-    header {
-      background: url("main-photo.jpeg") center/cover no-repeat;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      background-position: center;
-    }
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.5em;
-      margin: 0.5em 0;
-    }
-    section {
-      padding: 3em 1em;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 1em;
-    }
-    .rsvp-form input, .rsvp-form textarea, .rsvp-form select {
-      width: 100%;
-      padding: 0.7em;
-      margin: 0.5em 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .rsvp-form button {
-      padding: 0.7em 2em;
-      background: #446644;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    footer {
-      text-align: center;
-      padding: 2em;
-      font-size: 0.9em;
-      background: #f0f0f0;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Весілля Mariia & Oleksii</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            padding: 0;
+        }
+        header img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 36px;
+            margin: 20px 0 0;
+        }
+        .date {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .countdown {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        section {
+            padding: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            font-size: 26px;
+            margin-top: 40px;
+            color: #333;
+        }
+        .rsvp {
+            margin-top: 40px;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
+    <header><header style="text-align: center;">
+    <img src="your-photo.jpg" alt="Наше фото" style="width: 100%; max-height: 400px; object-fit: cover;">
+    <div style="
+        font-family: 'Playfair Display', serif;
+        font-size: 36px;
+        font-weight: 400;
+        margin-top: 20px;
+        color: #000;
+    ">
+        Oleksii & Mariia
+    </div>
+</header>
+<div class="date">20.09.2025</div>
+<div class="countdown" id="countdown">Завантаження відліку...</div></header>
 
-  <header>
-    <h1>Mariia & Oleksii</h1>
-    <p>20 вересня 2025</p>
-  </header>
+    <section>
+        <h2>Про подію</h2>
+        <p><strong>Церемонія та святковий банкет:</strong> Forrest Club, м.Київ, проспект Литовський, 20А</p>
+        <p>13:30 — збір гостей та welcome drink<br>14:30 — початок церемонії</p>
 
-  <section>
-    <h2>Деталі події</h2>
-    <p><strong>Місце:</strong> Forrest Club, м. Київ, проспект Литовський, 20А</p>
-    <p><strong>Час:</strong> 13:30 – welcome drink та збір гостей<br>
-    14:30 – початок церемонії</p>
-  </section>
+        <h2>Дрес-код</h2>
+        <p>Будемо дуже вдячні якщо при виборі вбрання Ви надасте перевагу природнім відтінкам без яскравих акцентів. Чорний дозволений.</p>
 
-  <section>
-    <h2>Дрес-код</h2>
-    <p>Надайте перевагу природним відтінкам без яскравих акцентів.<br>Чорний колір дозволений.</p>
-  </section>
+        <h2>Якщо Ви планували придбати квіти для нас, то:</h2>
+        <p>• Будемо раді, якщо поповните нашу бібліотеку особливою для Вас кинигою<br>• Пропонуємо задонатити на ЗСУ (у день весілля ми розмістимо QR-код з посиланням на власну банку)</p>
 
-  <section>
-    <h2>Подарунки</h2>
-    <p>Ми будемо вдячні, якщо замість квітів ви подаруєте щось символічне:</p>
-    <ul>
-      <li>Книги, які мають для вас значення</li>
-      <li>Донат на підтримку ЗСУ</li>
-    </ul>
-  </section>
+        <h2>Координатор</h2>
+        <p>Щодо усіх питання у день весілля просимо звертатись до нашої координаторки. Діана — +380 (63) 152 75 54</p>
 
-  <section>
-    <h2>Контакт координатора</h2>
-    <p>З усіх питань звертайтесь до нашої координаторки Діани:<br>
-    <strong>+380 (63) 152 75 54</strong></p>
-  </section>
+        <div class="rsvp">
+            <h2>Підтвердження присутності</h2>
+            <p>Просимо повідомити до 01.08 🤍</p>
+            <iframe src="https://formspree.io/f/mqaqpobb" width="100%" height="400" frameborder="0"></iframe>
+        </div>
+    </section>
 
-  <section>
-    <h2>RSVP</h2>
-    <form class="rsvp-form" action="https://formspree.io/f/mqaqpobb" method="POST">
-      <input type="text" name="name" placeholder="Ім’я" required>
-      <input type="text" name="surname" placeholder="Прізвище" required>
-      <select name="attendance" required>
-        <option value="">Чи будете ви присутні?</option>
-        <option value="Так">Так</option>
-        <option value="Ні">Ні</option>
-      </select>
-      <input type="number" name="guests" placeholder="Кількість гостей" min="1" max="10">
-      <textarea name="message" placeholder="Коментар (за бажанням)"></textarea>
-      <button type="submit">Надіслати</button>
-    </form>
-  </section>
+    <footer>
+        Створено з любов’ю
+    </footer>
 
-  <footer>
-    З любов’ю, Марія та Олексій — 2025
-  </footer>
+    <script>
+        const weddingDate = new Date("2025-09-20T14:30:00+03:00"); // київський час
+        const countdown = document.getElementById("countdown");
 
+        function updateCountdown() {
+            const now = new Date();
+            const diff = weddingDate - now;
+            if (diff <= 0) {
+                countdown.textContent = "Весілля розпочалося!";
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+
+            countdown.textContent = До весілля залишилось: ${days} днів ${hours} год ${minutes} хв ${seconds} сек;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
 </body>
 </html>
